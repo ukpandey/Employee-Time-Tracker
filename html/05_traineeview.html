@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" >
+    <title>Random Pie Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/css/traineeviewstyle.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Bungee+Spice&family=Fira+Sans:ital@1&family=Imperial+Script&family=Ubuntu:wght@500&display=swap");
+    </style>
+    
+  </head>
+  <body>
+    <div class="heading"> <a href="01_index.html" style="text-decoration: none;"><h1>EMPLOYEE TIME TRACKER</h1></a></div>>
+    <div class="container">
+      <div class="chart-container">
+        <h1>Random Pie Chart</h1>
+        <canvas id="myPieChart"></canvas>
+      </div>
+      <div class="panel">
+        <div class="panel1">
+          <div class="einfo panelbutton" onclick="showEmployeeInfo()">
+            Employee Info
+          </div>
+          <a href="051_editprojects.html" style="text-decoration: none;"><div class="updateinfo panelbutton">Edit Projects</div></a>
+        </div>
+        <div id="employeeInfo" style="display: none">
+          <span>Employee Name</span>
+          <div class="whitebg">Random Sharma</div>
+          <span>Employee ID</span>
+          <div class="whitebg">12345</div>
+          <span>Projects/Tasks for this week:</span>
+          <ul>
+            <li>
+              <ul>
+                <span>Project 1</span>
+                <br />
+                <br />
+                <span>Project Title</span>
+                <li class="whitebg">Creating front end prototype</li>
+                <span>Project Description</span>
+                <li class="whitebg">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptate odit illo reprehenderit velit error aliquam aut
+                  officia nobis, veniam illum pariatur tempore ipsum eaque,
+                  natus quia tenetur animi eveniet nam?
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <span>Project 2</span>
+                <br />
+                <br />
+                <span>Project Title</span>
+                <li class="whitebg">Changing Configuration</li>
+                <span>Project Description</span>
+                <li class="whitebg">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Explicabo illum totam at eveniet similique a aliquam dolorum
+                  quaerat. Rerum nulla consectetur aut necessitatibus, nam
+                  impedit provident voluptatibus fuga asperiores architecto?
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <ul>
+                <span>Project 3</span>
+                <br />
+                <br />
+                <span>Project Title</span>
+                <li class="whitebg">Updating tickets</li>
+                <span>Project Description</span>
+                <li class="whitebg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Incidunt obcaecati cumque dolorum facere, molestias quidem
+                  nulla, quas voluptas cum itaque ex minus dolorem laborum
+                  eveniet dignissimos nisi consequatur quasi architecto.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="hideEmployeeInfo()">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/traineeviewscript.js"></script>
+  </body>
+</html>

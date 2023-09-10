@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" >
+    <title>Employee Time Tracker</title>
+    <link rel="stylesheet" href="/css/leadviewstyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bungee+Spice&family=Fira+Sans:ital@1&family=Imperial+Script&family=Ubuntu:wght@500&display=swap');
+      </style>
+</head>
+<body>
+    <header>
+       <a href="01_index.html" style="text-decoration: none;"><h1>Employee Time Tracker</h1></a> 
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="addTrainee">Add Trainee</a></li>
+            <li><a href="#" id="viewTrainee">View Trainee</a></li>
+            <li><a href="#" id="addProject">Add Project</a></li>
+            <li><a href="#" id="viewProject">View Project</a></li>
+        </ul>
+    </nav>
+
+        <div id="addTraineeForm">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required><br><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="createPassword">Create Password:</label>
+                <input type="password" id="createPassword" name="createPassword" required><br><br>
+
+                <label for="reEnterPassword">Re-enter Password:</label>
+                <input type="password" id="reEnterPassword" name="reEnterPassword" required><br><br>
+
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" id="projectTitle" name="projectTitle" required><br><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Add Trainee">
+            </form>
+        </div>
+
+        <div class="viewTableStyle">
+            <table id="viewTraineeTable" class="viewTraineeTable">
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                </tr>
+                <!-- Table rows will be dynamically added here using JavaScript -->
+            </table>
+        </div>
+
+        <div id="addProjectForm">
+            <form>
+                <label for="pname">Project Name:</label>
+                <input type="text" id="pname" name="pname" required><br><br>
+
+                <label for="pdescription">Project Description:</label>
+                <textarea id="pdescription" name="pdescription" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="lname">Team Lead</label>
+                <input type="email" id="lname" name="lname" required><br><br>
+
+                <label for="sdate">Total Weeks </label>
+                <input type="text" id="sdate" name="sdate" required> <br><br>
+
+                <input type="submit" value="Add Project">
+            </form>
+        </div>
+
+        <div class="viewTableStyle" >
+            <table id="viewProjectTable" class="viewTraineeTable">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                    <th>Lead</th>
+                    <th>Total Weeks</th>>
+                </tr>
+                <!-- Table rows will be dynamically added here using JavaScript -->
+                
+            </table>
+        </div>
+
+        <script src="/js/leadviewscript.js"></script>
+        
+
+</body>
+</html>

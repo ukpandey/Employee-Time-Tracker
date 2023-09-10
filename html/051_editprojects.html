@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" >
+    <link rel="stylesheet" href="/css/editprojectsstyle.css" />
+    <title>Project Manager</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bungee+Spice&family=Fira+Sans:ital@1&family=Imperial+Script&family=Ubuntu:wght@500&display=swap');
+      </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+    <a href="01_index.html" style="text-decoration: none;"><h1>EMPLOYEE TIME TRACKER</h1></a>
+    <div class="container">
+        <h2>Add Your Projects</h2>
+      <div class="add-project-form">
+        <input type="text" id="projectName" placeholder="Project Name" />
+        <input type="text" id="description" placeholder="Description" />
+        <input type="date" id="startDate" />
+        <input type="date" id="endDate" />
+        <input type="number" id="timeSpent" placeholder="Time Spent (hours)" />
+        <select id="status">
+          <option value="ongoing">Ongoing</option>
+          <option value="finished">Finished</option>
+        </select>
+        <button onclick="addProject()">Add Project</button>
+      </div>
+      <!-- <div id="projects-list" class="projects-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                        <th>Time Spent (hours)</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="projects-table-body">
+                    <tr>
+                        <td colspan="7" class="no-projects-message">Have a cup of coffee and enjoy no projects for you right now.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+
+    <h2>MY PROJECTS</h2>
+
+    <div id="projects-list" class="projects-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Time Spent (hours)</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="projects-table-body">
+          <tr>
+            <td colspan="7" class="no-projects-message">
+              Have a cup of coffee and enjoy no projects for you right now. 
+               <i class="fa fa-coffee" style="font-size:36px"></i>
+            </td> 
+           
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="/js/editprojectsscript.js"></script>
+  </body>
+</html>

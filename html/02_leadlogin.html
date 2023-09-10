@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3063/3063792.png" >
+    <link rel="stylesheet" href="/css/leadloginstyle.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Bungee+Spice&family=Fira+Sans:ital@1&family=Imperial+Script&family=Ubuntu:wght@500&display=swap");
+      </style>
+    <title>EMPLOYEE TIME TRACKER</title>
+</head>
+<body>
+    <div class="bigcontainer">
+        <div class="container">
+            <div class="heading">
+                <a href="01_index.html" style="text-decoration: none"
+                    ><h1>EMPLOYEE TIME TRACKER</h1></a
+                >
+            </div>
+
+            <div class="lead-login">
+                <div class="login-container">
+                    <form class="login-form">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" name="username" required />
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required />
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            window.location.href = "04_leadview.html"; // Redirect to leadview.html
+        });
+    </script>
+</body>
+</html>
